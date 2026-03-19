@@ -1,0 +1,12 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "installCommand": "cd canada-connect-pros-main && npm ci",
+  "buildCommand": "cd canada-connect-pros-main && npm run build",
+  "outputDirectory": "canada-connect-pros-main/dist",
+  "rewrites": [
+    {
+      "source": "/((?!.*\\..*).*)",
+      "destination": "/index.html"
+    }
+  ]
+}
